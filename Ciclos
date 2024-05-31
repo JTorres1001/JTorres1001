@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+
+    // algoritmo para imprimir los numeros del 1 al 10 ciclo WHILE debe ser la condicion verdadera 
+
+    // var contador = 1;
+    // document.write("Empieza <br>") 
+    // while (contador <=300) {
+    //     document.write(contador + "<br>") 
+    //     contador++
+    // }
+    // document.write("Finaliza")
+
+    // algoritmo que pida una palabra y solo finalice cuando yo diga PARAR
+
+    // var palabra= ""
+    // while (palabra != "PARAR"){
+    //     palabra = prompt("ingrese la palabra")
+    //     document.write(palabra + "<br>")
+    // }
+
+    // algoritmo que me reciba un numero y lo sume con los anteriores  
+    //hasta que el total de la suma sea mayor o igual que 20
+
+    // var suma = 0
+    // while(suma < 20) {
+    //     var numero = parseInt(prompt("Ingrese el numero"))
+    //     document.write (numero + "<br>")
+    //     suma = suma + numero
+    // }
+
+    // algoritmo que solicita un numero y lo sume solo si es par, dejara de pedir numeros cuando
+    // se ingrese el numero 0
+
+    // var suma = 0
+    // var numero 
+    // while (numero !=0){
+    //     numero = parseFloat(prompt("Ingrese el Numero: "))
+    //     document.write(numero + "<br>")
+    //     if (numero%2 ==0){
+    //         suma = suma+numero
+    //     }
+
+    // }
+    // document.write("La suma es: " + suma)
+
+
+    // algoritmo que tenga un numero definido y luego permita al usuario adivinar el numero
+    // el programa debe seguir solicitando con un while hasta que el usuario adivine corerctamente
+
+//     var numOculto = 79
+//     var numero = 0
+//     while (numero !=numOculto){
+//         numero = parseInt (prompt("Ingrese el Numero"))
+//         document.write(numero + "<br>")
+
+//     }
+// document.write("Felicitaciones el numero es: " + numOculto)
+
+
+/**
+     * Reto #1 - Suma hasta cincuenta
+        Crea una variable que se llame total, 
+        después pide a tu usuario que ingrese un número y lo sume al valor de total. 
+        Haz que esto se repita hasta que el valor de total sea mayor a 50 y muestra el 
+        resultado en pantalla.
+    */
+//    var total = 0
+//    while (total <= 50) {
+//     var numero = parseInt(prompt("Ingrese el numero: "))
+//     total = total+numero
+//    }
+//     document.write("el resultado es: "+ total)
+
+     /**
+     * Reto #2 - Más allá del cuarenta y dos
+        Crea un código que pida al usuario un número y se repita hasta que 
+        coloque un número mayor a 42. 
+        Cuando se cumpla esta condición muestra el resultado en pantalla 
+        indicando esto al usuario y finaliza el ciclo.
+    */
+    // var numero = 0
+    // while(numero < 42){
+    //     numero = parseInt(prompt("Ingrese el numero: "))
+    //     document.write(numero + '<br>')
+    // }
+    // document.write("El Ciclo Termino")
+
+    /**
+     * Reto #3 - Sumas consecutivas
+        Pide al usuario que ingrese dos números y los sume. 
+        Después pregunta si quiere añadir otro número: si la respuesta es afirmativa añádelo al total; 
+        en caso contrario finaliza el ciclo y muestra el resultado total en pantalla.
+    */
+//    var num1 = parseInt(prompt("Ingrese el num1"))
+//    var num2 = parseInt(prompt("Ingrese el numero 2"))
+//    var total = num1+num2
+//    var preguntaPorNuevoNumero = prompt("Quiere ingresar otro numero")
+
+//    while(preguntaPorNuevoNumero == "Si"){
+//     var numero = parseFloat(prompt("Ingrese el nuevo numero"))
+//     total = total+numero
+//     preguntaPorNuevoNumero = prompt("Quiere ingresar otro numero")
+//    }
+//    document.write("El total es: "+ total)
+
+
+    /**
+     * Reto #4 - Lista de invitados
+        Estás organizando un banquete al que quieres invitar a tus amigos. 
+        Crea un programa que pida el nombre de uno de tus amigos, 
+        al hacerlo aumenta en uno una variable contadora, 
+        después pregunta si quieres invitar a alguien más: 
+        si la respuesta es afirmativa entonces pregunta por una persona más; 
+        en caso contrario cierra el ciclo y muestra en pantalla cuantos invitados son.
+    */
+//    var nombre = prompt("Ingrese el nombre del amigo")
+//    var contador = 1 
+//    var preguntaPorAmigo = prompt("preguntar por otro amigo: ")
+//    while(preguntaPorAmigo == "si"){
+//     nombre = prompt("ingrese el nombre de su amigo")
+//     contador++
+//     preguntaPorAmigo = prompt("preguntar por otro amigo")
+//    }
+//    document.write("La cantidad de amigos es:", contador)
+
+    /**
+     * Reto #5 - “Un elefante se balanceaba…”
+        Escribe un programa que inicie mostrando en pantalla la letra de “Un elefante se balanceaba” 
+        iniciando con el número 1, 
+        después pregunta al usuario cuantos elefantes más se balancearán y 
+        debe responder un número más al mostrado. 
+        En caso de ingresar un número diferente pedirle que intente de nuevo y repetir el ciclo hasta tener 10 elefantes.
+        Tomar en cuenta cuando el texto muestra un solo elefante y varios elefantes.
+    */
+//    var texto = "elefante se balanceaba sobre la tela de araña, como vioa resitencia se amarra otro elefante"
+//    var elefantes = parseInt(prompt("ingrese los elefantes"))
+//    var contador = 1 
+//    var textoElefante = "Elefante"
+//    while(contador <= elefantes){
+//     if (contador != 1){
+//         textoElefante = "Elefantes"
+
+//     }
+//     document.write(contador + "" + textoElefante + "" + texto + "<br>")
+//     contador++
+    
+
+   
+
+   /** Imprimir los numeros del 1 al 10 */
+    //   Inicio;    Salida;    Incremento
+    // for(var num = 0; num<=10; num+=2){
+    //     document.write("El numero es: " + num + "<br>")
+    // }
+    // /** Cronometro */
+    // for(var i=10; i>0; i--){
+    //     document.write("Tick Tack " + i + "<br>")
+    // }
+    // document.write("Boom")
+
+    /**
+     * Hacer un algoritmo que calcule el factorial de un numero
+    */
+//    var num = parseInt(prompt("Ingrese el numero: ")) // 5
+//    var factorial=1;
+//    for(var i=num; i>0; i--){
+//     //                factorial*i
+//     factorial= factorial*i // 1*5 => 5*4 => 20*3 => 60*2 => 120*1 = 120
+//    }
+//    document.write("El factorial de " + num + " es " + factorial)
+
+   /**
+    * Implementar un algoritmo que reciba un numero, e imprima la tabla
+    * de mutiplicar de dicho numero hasta 10, con el siguiente formato:
+    * n*1 = ?
+    * n*2 = ?
+   */
+//   var num = parseInt(prompt("Ingrese el numero"))
+//   var multiplicacion
+//   for(var i=1; i<=10; i++){
+//     multiplicacion=i*num
+//     document.write(num + "*" + i + "=" +multiplicacion + "<br>")
+//   }
+
+  /**
+   * Implementar un algoritmo que reciba un numero
+   * e imprima de sus numeros anteriores mayores que 0
+   * cuales son pares, cuales impares y cuales son multiplos de 3
+  */
+
+//   var num = parseInt(prompt("Ingrese el numero:"))
+//   var texto = ""
+//   for(var i=num; i>0; i--){
+//     if(i%2 == 0){
+//         texto = i + " Es par <br>"
+//     }else{
+//         texto = i + " Es Impar <br>"
+//     }
+    
+//     if(i%3 == 0){
+//         texto = texto + i + " Es multiplo de 3 <br>"
+//     }
+//     document.write(texto)
+//   }
+
+  /**
+   * Implementar un algoritmo que determine si un numero ingresado es primo
+  */
+    // 1 - num
+//   var num = parseInt(prompt("Ingrese el numero"))
+//   var divisores=0 // 7
+//   for(var i=1; i<=num; i++){
+//     if(num%i === 0){ //7%7
+//         divisores++ // 2
+//     }
+//   }
+
+//   if(divisores>2){
+//       document.write("EL numero NO es primo")
+//     }else{
+//       document.write("El numero es primo")
+//   }
+
+
+  /**
+   * Implementar un algoritmo que me reciba un numero e imprima una 
+   * escalera de *, como la siguiente, de acuerdo al numero ingresado:
+   * +
+   * ++
+   * +++
+   * ++++
+   * +++++
+  */
+
+//   var num = parseInt(prompt("Ingrese el numero"))
+//   var escalera = "" 
+//   for(var i=1; i<=num; i++){
+//     // escalera = escalera+"*"
+//     escalera += "*" //*****
+//     document.write(escalera +"<br>")
+  
+
+  /**
+   * Implementar un algoritmo que reciba un numero de mes
+   * y muestre todos los meses anteriores, incluyendolo
+  */
+//  var numeroMes = parseInt(prompt("Ingrese el numero del mes"))
+
+// for(var i=1; i<=numeroMes; i++){
+//    switch(i){
+//        case 1:
+//            document.write("Enero <br>")
+//            break;
+//        case 2:
+//            document.write("Febrero <br>")
+//            break;
+//        case 3:
+//            document.write("Marzo <br>")
+//            break;
+//        case 4:
+//            document.write("Abril <br>")
+//            break;
+//        case 5:
+//            document.write("Mayo <br>")
+//            break;
+//        case 6:
+//            document.write("Junio <br>")
+//            break;
+//        case 7:
+//            document.write("Julio <br>")
+//            break;
+//    }
+// }
+
+ /**
+  * Implementar un algoritmo que cuente cuantos numeros multiplos de 7 hay entre
+  * 1 y 100
+ */
+
+//  var multiplosDe7 = 0
+//  for (var i=1; i<=100; i++){
+//     if (i%2 == 0){
+//         multiplosDe7++
+//     }
+//  }
+// document.write("la cantidad de multiplos de 7 es: " + multiplosDe7)
+
+</script>
+</html>
