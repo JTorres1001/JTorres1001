@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+
+    //
+    // var estudiantes = ["Juan", "Maria", "Carolina"]
+    // var notas = [3.5, 4.2, 2.8]
+    // var frutas = ["Manzana", "Pera", "Banano"]  
+    // document.write(estudiantes[2])
+
+    // var cliente = ["Laura","Luis", "Duvan",]
+    // cliente.push ("Felipe") // añade un elemento al final 
+    // document.write(cliente)
+    // document.write("<br>")
+
+    // // eliminar un elemento del array
+
+    // cliente.pop() // eliminar ultimo elemento
+    // cliente.splice(0, 1) // elimino un elemento en pocision especifica
+    // document.write(cliente)
+
+    // //ordenar un array 
+
+    // cliente.sort() // ordena
+    // cliente.reverse() // ordena al reves
+    // document.write(cliente)
+
+    //implementar 4 arrays
+    //paises
+    //ciudades
+    //departamentos
+    //universidades
+    //Mostrar la longitud de cada uno e imprimir sus elementos
+
+    // var paises = ["colombia", "peru", "chile", "panama"]
+    // document.write("los elementos del array son: "+ paises +"y su longitud es: "+paises.length)
+
+
+    // array con 5 notas y obtener el promedio
+    // var notas = [3.5, 2.9, 5, 4.7, 4.8]
+    // var acumulado=0
+    // for(var i=0; i<notas.length; i++){
+    //     acumulado=acumulado + notas[i]
+    // }
+    // var promedio = acumulado/notas.length
+    // document.write("el promedio es: " +promedio)
+
+
+
+    // algoritmo que permita ingresar 5 personas agregarlas a un array
+    // de invitados e imprimir sus nombres y la cantidad total 
+
+    // var nombre
+    // var catidadInvitados = parseInt(prompt("Ingrese la antidad de personas a invitar"))
+    // var invitados = []
+    // for (var i=0; i<catidadInvitados; i++){
+    //     nombre = prompt("ingrese el nombre del invitado")
+    //     invitados.push(nombre)
+        
+    // }
+    // document.write("los invitados son: " +invitados + "<br>")
+    // document.write("la cantidad de invitados es: " +invitados.length)
+
+
+var matriz = [
+    [4.1, 2, 3, 4.5],
+    [2.8, 3.5, 4.2, 5],
+    [2.5, 3, 2.8, 4.7],
+    [4.7, 4, 3.6, 2.3]
+]
+var notaPeriodo = 0 
+var acumulado = 0
+
+for (var i=0; i<matriz.length; i++){
+    document.write(matriz[i] + "<br>")
+
+    for (var j=0; j<matriz[i].length; j++){
+        notaPeriodo = notaPeriodo+matriz[i][j]
+    }
+    notaPeriodo = notaPeriodo/matriz[i].length
+    document.write("la nota del periodo es " + i + "es" + notaPeriodo + "<br>")
+    acumulado = acumulado+notaPeriodo
+    notaPeriodo=0
+
+}
+document.write("la nota final es: " + acumulado/matriz.length)
+
+
+</script>
+</html>
