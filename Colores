@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <div class="color1 bordes margenes">
+        <i class="fa-solid fa-bug"></i>
+        Elemento 1
+    </div>
+    <div class="color2 bordes margenes padding">
+        <i class="fa-solid fa-dragon"></i>
+        Elemento 2
+    </div>
+    <div>
+        <h1 class="text-shadow">Titulo <i class="fa-solid fa-cubes"></i> </h1>
+        <p class="alineacion-texto text-shadow"> ipsum dolor sit, amet consectetur adipisicing elit. Voluptates fugiat dolore sequi ipsa aperiam iusto, consequatur nostrum accusamus repudiandae! Ducimus modi ratione rem, in rerum quia consequuntur voluptate eaque aliquam?</p>
+    </div>
+    
+    <button>Ducha <i class="fa-solid fa-bath"></i> </button>
+    <br>
+    <!-- etiqueta de links (target blank es para que abra link en nueva pestaña) -->
+    <a href="https://campus.talentotechbogota.co" class="enlace enlace:hover enlace:active" target="blank">Talento Tech</a>
+    
+    <div>
+        <h1>LISTAS</h1>
+        <ul>
+            <li>Huevos</li>
+            <li>Leche</li>
+            <li>Carne</li>
+            <li>Pescado</li>
+        </ul>
+    </div>
+    <div>
+        <h1>TABLA</h1>
+        <table id="estilo-tabla">
+            <tr>
+                <th>Nombre</th>
+                <th>Ciudad</th>
+                <th>Correo</th>
+            </tr>
+            <tr>
+                <td>Juan</td>
+                <td>Cali</td>
+                <td>JuanRock@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Camilo</td>
+                <td>Villao</td>
+                <td>CamiloLpn@gmail.com</td>
+            </tr>
+            <tr>
+                <td>David</td>
+                <td>Medellin</td>
+                <td>davidgg@gmail.com</td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <h1>Posicionamiento</h1>
+        <div class="relative">
+            Relativo
+            <div class="absolute">
+                Absoluto
+                <div class="fixed">
+                    Fijado
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam amet, sed odio atque, ex neque perspiciatis, eius quidem eaque tenetur voluptate molestias incidunt aliquid blanditiis doloribus officia optio dicta reiciendis.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h1>Float</h1>
+        <div>
+            <p>
+                Lorem ipsum dolor sitnsequatur voluptates earum quo numquam, nemo ratione consectetur corrupti.
+                <img class="float" src="https://th.bing.com/th/id/R.a77630c5e9f0dbbbe343831a62b90a5f?rik=8tMGv4I78hQcxQ&pid=ImgRaw&r=0" width="100">
+            </p>
+            
+        </div>
+    </div>
+    <div>
+        <h1>Imagenes</h1> 
+        <img class="imagen1" src="https://th.bing.com/th/id/OIP.F7aSwMC3yPcVp2SHthzv4AHaHc?rs=1&pid=ImgDetMain">
+
+        <img class="imagen2" src="https://th.bing.com/th/id/R.b0fde4dff393fe8c372675b68e708a8b?rik=MBYXOIG4Xi2Hng&riu=http%3a%2f%2f3.bp.blogspot.com%2f-xqiQr0gWowM%2fUXSkGxBXBMI%2fAAAAAAAATgg%2fMCQC7NKG5sg%2fs320%2fpredator_big.png&ehk=OhAGXmnhPJajBeCKWpw%2f9dxg%2fGgVMLWIo6PN6Pk%2b0MU%3d&risl=&pid=ImgRaw&r=0">
+
+        <img class="imagen3" src="https://th.bing.com/th/id/OIP.k7XdZGfmNT34pdoyf1EZiAHaIZ?rs=1&pid=ImgDetMain">
+    </div> 
+</body>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+
+<style>
+    .color1 {
+        background-color: blue;
+        color: white;
+        border: solid;
+        border-color: rgb(9, 42, 205);
+        opacity: 0.5;
+        
+    }
+    .color2 {
+        /* Tamaño del Elemento */
+        width: 80%;
+        height: 300px;
+
+        /* Imagen de fondo */
+        background-image: url(https://th.bing.com/th/id/OIP.FWJ6KlFLqAa0l9rMOGNp4gHaHa?w=224&h=220&c=7&r=0&o=5&pid=1.7);
+        background-repeat: no-repeat;
+        background-size: initial;
+        background-position: right top;
+        background-attachment: scroll;
+     
+
+    }
+    .bordes {
+        /* Bordes */
+        border: dotted;
+        border-color: darkgoldenrod;
+        border-width: 10px;
+        border-radius: 100px;
+    }
+    .margenes {
+         /* Margenes */
+         margin-left: 20px;
+        margin-top: 5px;
+        margin-bottom: 70px;
+        margin-right: 15px;
+    }
+.padding {
+    padding-top: 60px;
+    padding-left: 30px;
+    padding-right: 50px;
+}
+.alineacion-texto {
+    text-align: left;
+    text-align-last: right;
+    text-decoration-line: underline;
+    text-decoration-color: red;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 5px;
+    text-transform: capitalize;
+    text-indent: 50px;
+    letter-spacing: 2px;
+    line-height: 2;
+    word-spacing: 10px;
+    
+}
+.text-shadow {
+    color: tomato;
+    text-shadow: 2px 2px 5px blueviolet;
+    font-family: cursive;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 20px;
+}
+/* pseudo clases */
+.enlace {
+    text-decoration: underline;
+    background-color: rosybrown;
+    padding: 5px;
+    border-radius: 5px;
+    border-color: yellow;
+    border-style: solid;
+    display: inline-block;
+    text-align: center;
+    cursor: cell;
+
+}
+.enlace:hover {
+    color: orange;
+    text-decoration: none;
+
+}
+.enlace:active {
+    color: aquamarine;
+}
+ul>li {
+    list-style-type:georgian ;
+    background-color: white;
+    display: inline;
+    visibility: initial;
+}
+ul {
+    background-color: tomato;
+    opacity: 0.6;
+    padding: 20px;
+}
+table#estilo-tabla {
+    border: 1px solid;
+    width: 60%;
+    text-align: center;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid;
+    padding: 10px;
+    
+}
+table#estilo-tabla tr:nth-child(even){
+    background-color: white;
+}
+table#estilo-tabla tr:hover{
+    background-color: yellow;
+    color: blue;
+
+}
+table#estilo-tabla th{
+    background-color: orange;
+    color: wheat;
+}
+.relative{
+border: 3px solid blue;
+width: 400px;
+height: 200px;
+position: relative;
+
+
+}
+.absolute{
+    border: 3px solid rosybrown;
+    width: 200px;
+    height: 100px;
+    right: 0;
+    top: 80px;
+    position: absolute;
+    /* alineacion */
+    text-align: right;
+       
+
+
+}
+.fixed{
+    border: 3px solid green;
+    width: 100px;
+    height: 50px;
+    left: 0;
+    top: 200px;
+    position: fixed;
+    background-color: yellow;
+    /* Desbordado */
+    overflow: auto;
+
+
+}
+.float{
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+h1::first-letter{
+    color: gold;
+    background-color: red;
+    font-size: 50px;
+
+}
+.imagen1{
+    width: 20%;
+    border-radius: 40px;
+    border: 6px solid black;
+    padding: 10px;
+    outline-color: blue;
+    outline-style: solid;
+
+}
+.imagen2{
+    width: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    box-shadow: 5px 1px 20px red;
+    
+}
+.imagen3{
+    width: 20%;
+    display: block;
+    margin-top: 40px;
+    /* difuminado */
+    filter: blur(4px); 
+    /* brillo */
+    filter: brightness(300%);
+    
+    
+}
+</style>
+</html>
