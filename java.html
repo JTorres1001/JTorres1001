@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+
+    var nombre = "Mario" //String
+    var apellido = 'Sanchez' // String
+    var edad = 31 // Int
+    var ciudad = "Manizales" // String
+    var promedio = 3.15 // Float
+    var esColombiano = true // Boolean
+
+    // Para mañana
+    // var num1 = prompt("Ingrese el numero 1:")
+    // var num2 = prompt("Ingrese el numero 2:")
+
+    // console.log(num1, num2)
+    const NUMERO_PI = 3.1416
+    // Definiendo la variable
+    var operacion = 30+5*2-6/3
+    //              30+ 10- 2
+    //                  38
+    console.log(operacion)
+    operacion = 3*2**3+8/2-13
+    //          3* 8 +8/2-13 
+    //           24  + 4 -13
+    //              15
+    console.log(operacion)
+
+    operacion = (2+2)**[(2*3)-14+10]+4
+    //            4  **[  6  -14+10]+4
+    //            4  **     2       +4
+    //                16            +4
+    //                      20
+    console.log(operacion)
+    
+    // Dadas 3 notas, calcular el promedio 2.5, 4, 3.2
+    // Convertir 18 grados celcius a grados Farenheit
+    // Calcular el area de un rectangulo, si el ancho es 4 y alto es 8
+
+    gradosF = (18*(9/5))+32
+    console.log(gradosF)
+
+    areaR = 4*8
+    console.log(areaR)
+
+    var exponenciacion = 3**3
+    console.log(exponenciacion)
+
+    var modulo = 7%3 // Modulo -> Residuo
+    console.log(modulo)
+
+    //Incremento
+    var contador = 1 // 1
+    contador = contador+1 // 2
+    contador++ // 3
+    alert("El valor del contador es:"+ contador) // Concatenacion
+
+    //Decremento
+    contador = contador-1 // 2
+    contador-- // 1
+    alert("El valor del contador es: "+  contador)
+
+
+    // Crear las variables de nombre, apellidos, edad y ciudad. En una variable llamada resultado concatenar
+    // los valores de todas las variables separadas por coma (,)
+
+    var nombre = "Juan"
+    var apellidos = 'Romero'
+    var edad = 31
+    var ciudad = 'Manizales'
+
+    var resultado = nombre + ", " + apellidos + ", " + edad + ", " + ciudad
+    document.write(resultado)
+
+
+
+    // Calculadora
+    var num1 = parseInt(prompt("Ingrese el numero 1:")) // 15
+    var num2 = parseInt(prompt("Ingrese el numero 2:")) // 23
+    var suma = num1+num2
+
+    document.write("Los numeros ingresados son: " + num1 +", " + num2 + "<br>")
+    document.write("La suma es: " + suma + '<br>')
+    // Implementar una calculador que tomando los 2 numeros me muestre:
+    // La suma, la resta, el residuo, la multiplicacion, la division y la potenciacion
+    var resta = num1-num2
+    document.write("La resta es: " + resta + "<br>")
+    
+    /** Crear un algoritmo que reciba el alto y el ancho de un rectangulo y muestre en pantalla su area. */
+    // Ar = Alto*Ancho
+    // var base = parseInt(prompt("Ingrese la base de rectangulo: "))
+    // var altura = parseInt(prompt("Ingrese la altura del rectangulo: "))
+    // var area = base*altura
+    // document.write("El area del triangulo es: " + area)
+
+    /** Crear un algoritmo que reciba el radio y calcule el area de un circulo. 
+     * 1. Investigar cual es la formula del area de un circulo
+     *      Ac = PI*r^2
+     * 2. Recibir el radio que ingrese el usuario por pantalla
+     * 3. Crear una constante con el valor de PI
+     * 4. Implementar la formula para obtener el area
+     * 5. Mostrar el resultado en pantalla
+    */
+//    var radio = parseFloat(prompt("Ingrese el radio del circulo: ")) // Numero decimal
+//    const PI = 3.1416
+//    var areaCirculo = PI*radio**2
+//    document.write("El area del circulo es: "+ areaCirculo)
+
+   // Calculadora de Indice Masa Corporal
+   var peso = parseFloat(prompt("Ingrese el peso: "))
+   var altura = parseFloat(prompt("Ingrese la altura: "))
+   var imc = peso/altura**2
+   document.write("El IMC si su peso es: " + peso + " y su altura es: " + altura + " el IMC es igual a: " + imc)
+</script>
+</html>

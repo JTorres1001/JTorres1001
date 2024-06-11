@@ -1,0 +1,298 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body id="body">
+<div>
+    <img  id="logo" class="imagen1" src="https://ew.com/thmb/SpqVHh6pwaeIEqFO9hmVtMCiS4M=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Spotify-089b80c169d44fcfa110aebc6801289f.jpg" alt="">
+     <select  onchange= "cambiarTemaLogo(value)">
+        <option value="small">Pequeno</option>
+        <option value="medium">Mediano</option>
+        <option value="large">Grande</option>
+
+
+     </select>
+</div>
+
+
+<div>
+    <h1>Spotify</h1>
+</div>
+
+<div>
+    <p> We are the world’s most popular audio streaming subscription service with more than 615 million users, including 239 million subscribers in more than 180 markets.</p>
+</div>
+
+<div>
+<ul>
+    <li>All Premium plans include:</li>
+    <li>Ad-free music</li>
+    <li>Download songs to listen offline.</li>
+    <li>Listen to free audiobooks</li>
+</ul> 
+</div>
+
+<div>
+<a href="https://www.spotify.com/us/premium/" target="_blank">Click Here</a>
+</div>
+
+<div>
+<ul>
+    <li> Contact us </li>
+    <li>X Send us a direct message at @SpotifyCares.</li>
+</ul>
+</div>
+
+<div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/j8L5ySUufdE?si=hHblmKBwIdnMM3Yy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+<div>
+<hr>
+<h1 style="background-color: aquamarine;">Formulario de contacto</h1>
+<form action=""></form>
+<label for="">Nombre</label>
+<input type="text"placeholder="Escriba el nombre" required name="nombre" id="nombre">
+<br>
+<label for=""> Apellidos</label>
+<input type="text"placeholder="Escriba el apellido" required name="apedillos" id="apellidos">
+<br>
+<label for="Documento indendidad"> Documento de Identidad</label>
+<select name="" id= "Documento indendidad" >
+<option value="">-</option>
+<option value="Cedula">Cedula</option>
+<option value="Pasaporte">Pasaporte</option>
+</select>
+<label for="">Numero</label>
+<input type="number" placeholder="Escriba el numero" id="numero">
+<br>
+<label for="">Ciudad</label>
+<select name="" id="Ciudad">
+<option value="">-</option>
+<option value="Bogota"> Bogota</option>
+<option value="Medellin"> Medellin</option>
+</select>
+<br>
+<label for="">Telefono</label>
+<input type="tel" placeholder="Telefono" name="tel" id="Telefono">
+<br>
+<label for="">Direccion</label>
+<input type="text" id="Direccion">
+<br>
+<label for="">Correo electronico</label>
+<input type="email"required placeholder="Ingresar Email"name="email" id="Correo electronico">
+<br>
+<label for="">Subir Documento</label>
+<input type="file" name="file" id="Subir Documento">
+<br>
+<label for="">Fecha de nacimiento</label>
+<input type="date" id=" Fecha de nacimiento">
+<br>
+<button onclick="enviarformulario()">Enviar</button>
+</div>
+
+<br>
+
+<h1 style="background-color: aquamarine;"> Ventas del 2023</h1>
+<table id="tabla66">
+<tr style="background-color: blueviolet;"> 
+    <th>Mes</th>
+    <th>Ventas</th>
+</tr>
+<tr>
+    <td> Enero </td>
+    <td>3.500.000</td>
+</tr>
+<tr>
+    <td> Febrero </td>
+    <td>300.000.000</td>
+</tr>
+<tr>
+    <td> Marzo </td>
+    <td>2.500.000</td>
+</tr>
+<tr>
+    <td> Abril </td>
+    <td>3.100.000</td>
+</tr>
+<tr>
+    <td> Mayo </td>
+    <td>3.000.000</td>
+</tr>
+<tr>
+    <td> Jnuio </td>
+    <td>3.000.000</td>
+</tr>
+<tr>
+    <td> Julio </td>
+    <td>3.100.000</td>
+</tr>
+<tr>
+    <td> Agosto </td>
+    <td>3.200.000</td>
+</tr>
+<tr>
+    <td> Septiembre </td>
+    <td>2.500.000</td>
+</tr>
+<tr>
+    <td> Octubre </td>
+    <td>2.700.000</td>
+</tr>
+<tr>
+    <td> Noviembre </td>
+    <td>3.200.000</td>
+</tr>
+<tr>
+    <td> Diciembre</td>
+    <td>2.900.000</td>
+</tr>
+
+</table>
+
+</div>
+<hr>
+
+
+    <div>
+        <select name="" id="tema" onchange="cambiarTema()">
+            <option value="light">Claro</option>
+            <option value="dark">Oscuro</option>
+            <option value="crazy">Loco</option>
+        </select>
+    </div>
+
+</body>
+
+    
+    <style>
+        .imagen1{
+            width: 35%;
+            display: block;
+            border: 5px solid rgb(5, 235, 5);
+            border-radius: 30px;
+            box-shadow: 5px 1px 20px rgb(129, 228, 223);
+            margin-left: auto;
+            margin-right: auto;
+    
+
+        }
+
+
+        h1::first-letter{ 
+            color:green;
+            background-color: rgb(74, 253, 253);
+            font-size: 50px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+           
+}
+input, textarea, select{
+    width: 100%;
+    padding: 10px 20px;
+    margin:8px;
+    border: 1px solid green;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+button{
+    border-radius: 10px;
+    background-color: greenyellow;
+    border-color: black;
+    border:3px;
+    border-radius: 10px;
+    border-style: solid;
+    width: 100%;
+    
+
+}
+
+th, td{
+    border: 1px solid;
+    border-color: black;
+}
+
+    </style>
+
+
+
+
+<script>
+    function cambiarTema(){
+        var body = document.getElementById("body")
+        var tema = document.getElementById("tema").value
+        var fondo=""
+        var letra=""
+        if(tema == "light"){ 
+            fondo= "white"
+            letra= "black"
+        }
+        else if (tema == "dark"){ 
+            fondo= "black"
+            letra= "white"
+        }
+        else if (tema == "crazy"){ 
+            fondo= "tomato"
+            letra= "yellow"
+        }
+
+        body.style.backgroundColor= fondo
+        body.style.color= letra
+
+        var tabla66=document.getElementById("tabla66")
+        tabla66.style.color= letra
+
+
+    }
+
+    function enviarformulario(){
+        var nombre= document.getElementById("nombre").value
+        var apellidos= document.getElementById("apellidos").value
+        var documentoIndendidad= document.getElementById("Documento indendidad").value
+        var numero= document.getElementById("numero").value
+        var Telefono= document.getElementById("Telefono").value
+        var Direccion= document.getElementById("Direccion").value
+        var CorreoElectronico= document.getElementById("Correo electronico").value
+
+      
+
+        if(nombre && apellidos){
+        alert ("los datos del formulario son:"+ nombre+""+ apellidos)
+    }
+}
+
+function cambiarTemaLogo(tamano){
+    var logo= document.getElementById("logo")
+    var tamanoLogo= 0
+    if (tamano == "small"){ 
+        tamanoLogo= 300
+            }
+
+    else if (tamano == "medium"){ 
+        tamanoLogo= 600
+            }
+
+    else if (tamano == "large"){ 
+        tamanoLogo= 900
+            }
+
+        logo.style.width= tamanoLogo + "px"
+
+
+}
+
+
+
+</script>
+
+
+
+
+
+
+
+
+</html>
